@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ConnectionTypes>
+    <ConnectionType ID="network" />
+    <ConnectionType ID="serial" />
+    <ConnectionType ID="power" />
+    <ConnectionType ID="link" />
+  </ConnectionTypes>
+  <DeviceRoles>
+    <DeviceRole ID="ToR" />
+    <DeviceRole ID="ToRSwitch" />
+    <DeviceRole ID="UtilityToR" />
+    <DeviceRole ID="UtilityRackManagement" />
+    <DeviceRole ID="ClusterSpine" />
+    <DeviceRole ID="EdgeZoneAggregator" />
+    <DeviceRole ID="BackEndToR" />
+    <DeviceRole ID="BackEndClusterSpine" />
+    <DeviceRole ID="DatacenterSpine" />
+    <DeviceRole ID="BorderLeaf" />
+    <DeviceRole ID="Edge" />
+    <DeviceRole ID="MgmtSwitch" />
+    <DeviceRole ID="MgmtLeafRouter" />
+    <DeviceRole ID="SerialAggregator" />
+    <DeviceRole ID="LoadBalancer" />
+    <DeviceRole ID="Router" />
+    <DeviceRole ID="Util" />
+    <DeviceRole ID="HPiLO" />
+    <DeviceRole ID="CM" />
+    <DeviceRole ID="TapeLibrary" />
+    <DeviceRole ID="FibreChannelSwitch" />
+    <DeviceRole ID="InfiniBandSwitch" />
+    <DeviceRole ID="Epms" />
+    <DeviceRole ID="BackEndToRSwitch" />
+    <DeviceRole ID="RowManager" />
+    <DeviceRole ID="BMC" />
+    <DeviceRole ID="CMC" />
+    <DeviceRole ID="BmcMgmtTorRouter" />
+  </DeviceRoles>
+  <BladeRoles>
+    <BladeRole ID="Ufc" />
+    <BladeRole ID="Fcc" />
+    <BladeRole ID="Compute" />
+    <BladeRole ID="Unused" />
+    <BladeRole ID="Pfcc" />
+    <BladeRole ID="SoC" />
+  </BladeRoles>
+</Definitions>

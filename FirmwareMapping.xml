@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  DeviceFirmwareUpdateMappings Data Rules:
+    - Entries must contain one of the following, but cannot contain both:
+      1. DeviceSkuID
+      2. Manufacturer + Model (both must be present)
+
+    - If an entry has a value for FirmwareTo, then ImageLocation must also be populated.
+      Alternatively- if an entry has a value for ImageLocation, then FirmwareTo must also be populated.
+
+    - Entries with an empty FirmwareTo and empty ImageLocation are allowed.
+      This marks matching devices as not needing firmware updates (no-op).
+
+    - Ambiguous mappings are not allowed.
+      Every entry must be unique in it's combination of EngineeringGroup, Manufacturer, Model, DeviceSkuID, and RackSkuID.
+
+  Device Match Rankings:
+    1. EngineeringGroup + DeviceSkuID + RackSkuID
+    2. EngineeringGroup + Manufacturer + Model + RackSkuID
+    3. EngineeringGroup + DeviceSkuID
+    4. EngineeringGroup + Manufacturer + Model
+    5. DeviceSkuID + RackSkuID
+    6. Manufacturer + Model + RackSkuID
+    7. DeviceSkuID
+    8. Manufacturer + Model
+-->
+<DeviceFirmwareData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--RackManager LKG release for Azure-->
+  <DeviceFirmwareUpdateMappings EngineeringGroup="Azure" Manufacturer="Microsoft" Model="OCS" FirmwareTo="1.1.29.12" ImageLocation="D:\Data\Provisioning\Data\Images\WCS-RM-V1\m2010fwimage-1.1.29.12.tgz" />
+  <!--RackManager LKG release for EXO-->
+  <DeviceFirmwareUpdateMappings EngineeringGroup="Exchange" Manufacturer="Microsoft" Model="OCS" FirmwareTo="1.1.29.12" ImageLocation="D:\Data\Provisioning\Data\Images\WCS-RM-V1\m2010fwimage-1.1.29.12.tgz" />
+  <!--RackManager LKG release for AP/PF -->
+  <DeviceFirmwareUpdateMappings EngineeringGroup="Pilotfish" Manufacturer="Microsoft" Model="OCS" FirmwareTo="1.1.27.9" ImageLocation="D:\Data\Provisioning\Data\Images\WCS-RM-V1\m2010fwimage-1.1.27.9.tgz" />
+  <!--RackManager LKG release for OneFleet -->
+  <DeviceFirmwareUpdateMappings EngineeringGroup="OneFleet" Manufacturer="Microsoft" Model="OCS" FirmwareTo="1.1.29.12" ImageLocation="D:\Data\Provisioning\Data\Images\WCS-RM-V1\m2010fwimage-1.1.29.12.tgz" />
+  <!--RackManager LKG release (existing defaults)-->
+  <DeviceFirmwareUpdateMappings DeviceSkuID="Microsoft_OCS_M2010_Standalone_RackManager" FirmwareTo="1.1.29.12" ImageLocation="D:\Data\Provisioning\Data\Images\WCS-RM-V1\m2010fwimage-1.1.29.12.tgz" />
+  <DeviceFirmwareUpdateMappings DeviceSkuID="Microsoft_OCS_M2010_Gen6" FirmwareTo="1.1.29.12" ImageLocation="D:\Data\Provisioning\Data\Images\WCS-RM-V1\m2010fwimage-1.1.29.12.tgz" />
+  <DeviceFirmwareUpdateMappings DeviceSkuID="Microsoft_OCS_M2010_Gen6_Only_AP_XBOX" FirmwareTo="1.1.29.12" ImageLocation="D:\Data\Provisioning\Data\Images\WCS-RM-V1\m2010fwimage-1.1.29.12.tgz" />
+  <DeviceFirmwareUpdateMappings DeviceSkuID="Microsoft_OCS_M2010_Overlake" FirmwareTo="1.1.29.12" ImageLocation="D:\Data\Provisioning\Data\Images\WCS-RM-V1\m2010fwimage-1.1.29.12.tgz" />
+  <DeviceFirmwareUpdateMappings DeviceSkuID="Microsoft_OCS_M2010_Overlake_Standalone_RackManager" FirmwareTo="1.1.29.12" ImageLocation="D:\Data\Provisioning\Data\Images\WCS-RM-V1\m2010fwimage-1.1.29.12.tgz" />
+</DeviceFirmwareData>

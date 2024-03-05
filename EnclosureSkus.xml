@@ -1,0 +1,47 @@
+<TopologyDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EnclosureSkus>
+    <EnclosureSku ID="STRBAY-4U-WCS-J2010-AZURE-STORAGE-XSTORE-JBOD-GEN6.3-INTEL-ZT-FY20Q3-MSF-052922" ValidRoles="JBOD" NoProfile="true">
+      <Hardware Manufacturer="ZT" Model="" Version="1.0.0.0">
+        <Interfaces>
+          <Interface ID="COM1" Type="serial" />
+          <Interface ID="SAS1;SAS2;SAS3;SAS4" Type="link" />
+          <Interface ID="BMC" Type="link" />
+          <Interface ID="PP1" Type="power" />
+          <Interface ID="PP2" Type="power" >
+            <Property ID="SoftPower" Value="true" />
+          </Interface>
+          <Interface ID="NIC1" Type="network">
+            <Property ID="Bandwidth" Value="100000" />
+          </Interface>
+        </Interfaces>
+        <Ports />
+        <Components>
+          <Component Name="ManagementPort">
+            <Property ID="Location" Value="MP1" />
+            <Property ID="Manufacturer" Value="ZT" />
+            <Property ID="Model" Value="IPMI" />
+            <Property ID="Version" Value="1.0.0.0" />
+          </Component>
+          <Component Name="Disk">
+            <Property ID="SizePerDisk" Value="14000000" />
+            <Property ID="Count" Value="88" />
+            <Property ID="DiskMedia" Value="HDD" />
+          </Component>
+          <!--
+          <Component Name="SlotAdapter">
+            <Property ID="ID" Value="NIC1" />
+            <Property ID="Type" Value="network" />
+            <Property ID="NumberOfInterfaces" Value="1" />
+          </Component>
+          -->
+        </Components>
+      </Hardware>
+      <ConfigSettingDefinitions>
+        <ConfigSettingDefinition ID="Role" Type="String" />
+      </ConfigSettingDefinitions>
+      <ConfigSettings>
+        <ConfigSetting ID="Role" Value="JBOD" />
+      </ConfigSettings>
+    </EnclosureSku>
+  </EnclosureSkus>
+</TopologyDefinition>

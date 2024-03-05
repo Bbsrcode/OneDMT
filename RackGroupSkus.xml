@@ -1,0 +1,1676 @@
+<?xml version="1.0"?>
+<TopologyDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!--
+This is the template for wiring a physical rack, for the purpose of inter-rack wiring validation for BSL.
+In BSL, a set of racks is mapped to a rackgroupsku via the skuid's of the racks in the set.
+For that reason, rack skus appearing in this file can appear only once. 
+For example, the racksku "SkuID1" appears once in TestRackGroupSku. Thus, it cannot appear again in the same rackgroupsku,
+nor in any other rackgroupsku.
+-->
+  <RackGroupSkus>
+    <!--<RackGroupSku ID="ExampleRackGroupSku">       
+      <Wires>
+        <WireGroup Type="power">
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_ACSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_ACSocket_2" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="2" SkuID="EXAMPLE-TOR-POWER-WIRING-RACK_UPPER" />
+        <Rack ID="1" SkuID="EXAMPLE-TOR-POWER-WIRING-RACK_LOWER" />
+      </Racks>     
+    </RackGroupSku>-->
+    
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-026807-9.9TB-V15D-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-026807-9.9TB-V15D-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-026807-9.9TB-V15D-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+    
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-026874-9.9TB-V15D-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-026874-9.9TB-V15D-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-026874-9.9TB-V15D-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-029172-25.9TB-V15D-OFF-REVA">
+    <Wires>
+      <WireGroup Type="power">
+        <!--Power for lower rack TS-->
+        <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+        <!--Power for upper rack TS-->
+        <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+        <!--Power for lower rack NS-->
+        <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+        <!--Power for upper rack NS-->
+        <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+      </WireGroup>
+    </Wires>
+    <Racks>
+      <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-029172-25.9TB-V15D-OFF-REVA_Lower" />
+      <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-029172-25.9TB-V15D-OFF-REVA_Upper" />
+    </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030D-MSF-028028-9.9TB-V15D-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030D-MSF-028028-9.9TB-V15D-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030D-MSF-028028-9.9TB-V15D-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030D-MSF-030604-9.9TB-V15D-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030D-MSF-030604-9.9TB-V15D-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030D-MSF-030604-9.9TB-V15D-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-030067-25.9TB-V15B-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-030067-25.9TB-V15B-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-030067-25.9TB-V15B-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+    <RackGroupSku ID="EX-50A-RACK-48-C1030W-MSF-029326-25.9TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-RACK-48-C1030W-MSF-029326-25.9TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-50A-RACK-48-C1030W-MSF-029326-25.9TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-029173-25.9TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-029173-25.9TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-029173-25.9TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030Q-MSF-029219-25.9TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030Q-MSF-029219-25.9TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030Q-MSF-029219-25.9TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030Q-MSF-026886-25.9TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030Q-MSF-026886-25.9TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030Q-MSF-026886-25.9TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-030238-9.9TB-V15D-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-030238-9.9TB-V15D-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-030238-9.9TB-V15D-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-025465-8.0TB-V15D-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-025465-8.0TB-V15D-ONL-REVA_lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-025465-8.0TB-V15D-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030Q-MSF-025466-8.0TB-V15D-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030Q-MSF-025466-8.0TB-V15D-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030Q-MSF-025466-8.0TB-V15D-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030Q-MSF-025702-8.0TB-V15D-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030Q-MSF-025702-8.0TB-V15D-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030Q-MSF-025702-8.0TB-V15D-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-026907-25.9TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-026907-25.9TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-026907-25.9TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-026914-25.9TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-026914-25.9TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-026914-25.9TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-50A-RACK-48-C1030W-MSF-023157-16.0TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-RACK-48-C1030W-MSF-023157-16.0TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-50A-RACK-48-C1030W-MSF-023157-16.0TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-023360-24.0TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-023360-24.0TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-023360-24.0TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-025394-24.0TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-025394-24.0TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-025394-24.0TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+  
+    <RackGroupSku ID="EX-32A-RACK-48-C1030Q-MSF-023855-24.0TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030Q-MSF-023855-24.0TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030Q-MSF-023855-24.0TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030Q-MSF-026071-24.0TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030Q-MSF-026071-24.0TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030Q-MSF-026071-24.0TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030Q-MSF-026885-25.9TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030Q-MSF-026885-25.9TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030Q-MSF-026885-25.9TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-023858-24.0TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-023858-24.0TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-023858-24.0TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-026067-24.0TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-026067-24.0TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-026067-24.0TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-50A-RACK-48-C1030W-MSF-025698-8.0TB-V15D-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for Lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for Lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-RACK-48-C1030W-MSF-025698-8.0TB-V15D-ONL-REVA_Lower1" />
+        <Rack ID="2" SkuID="EX-50A-RACK-48-C1030W-MSF-025698-8.0TB-V15D-ONL-REVA_Lower2" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-025696-8.0TB-V15D-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-025696-8.0TB-V15D-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-025696-8.0TB-V15D-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-023158-8.0TB-V15E-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-023158-8.0TB-V15E-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-023158-8.0TB-V15E-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-025569-8.0TB-V15E-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-025569-8.0TB-V15E-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-025569-8.0TB-V15E-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-50A-RACK-46-C1030W-MSF-023159-8.0TB-V15E-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-RACK-46-C1030W-MSF-023159-8.0TB-V15E-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-50A-RACK-46-C1030W-MSF-023159-8.0TB-V15E-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-023365-8.0TB-V15E-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-023365-8.0TB-V15E-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-023365-8.0TB-V15E-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-50A-RACK-46-C1030W-MSF-025710-8.0TB-V15E-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-RACK-46-C1030W-MSF-025710-8.0TB-V15E-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-50A-RACK-46-C1030W-MSF-025710-8.0TB-V15E-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-030801-9.92TB-V15C-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-030801-9.92TB-V15C-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-030801-9.92TB-V15C-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-50A-RACK-48-C1030W-MSF-022459-8.0TB-V15D-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for Lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for Lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-RACK-48-C1030W-MSF-022459-8.0TB-V15D-REVA_Lower1" />
+        <Rack ID="2" SkuID="EX-50A-RACK-48-C1030W-MSF-022459-8.0TB-V15D-REVA_Lower2" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-022460-8.0TB-V15D-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for Lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for Lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-022460-8.0TB-V15D-REVA_Lower1" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-022460-8.0TB-V15D-REVA_Lower2" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-025464-8.0TB-V15D-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-025464-8.0TB-V15D-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-025464-8.0TB-V15D-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-023364-16.0TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-023364-16.0TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-023364-16.0TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-023156-16.0TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-023156-16.0TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-023156-16.0TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-023148-24.0TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-023148-24.0TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-023148-24.0TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-025404-24.0TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-025404-24.0TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-025404-24.0TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-023856-24.0TB-V15D-OFF-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-023856-24.0TB-V15D-OFF-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-023856-24.0TB-V15D-OFF-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-48-C1030W-MSF-025697-8.0TB-V15D-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for Lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for Lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030W-MSF-025697-8.0TB-V15D-ONL-REVA_Lower1" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030W-MSF-025697-8.0TB-V15D-ONL-REVA_Lower2" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-30A-RACK-46-C1030-MSF-016854-8000GB-V15B-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for Lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for Lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-30A-RACK-46-C1030-MSF-016854-8000GB-V15B-REVA_Lower1" />
+        <Rack ID="2" SkuID="EX-30A-RACK-46-C1030-MSF-016854-8000GB-V15B-REVA_Lower2" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030-MSF-016017-8000GB-V15B-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for Lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for Lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030-MSF-016017-8000GB-V15B-REVA_Lower1" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030-MSF-016017-8000GB-V15B-REVA_Lower2" />
+      </Racks>
+    </RackGroupSku>
+    
+    <RackGroupSku ID="EX-32A-RACK-48-C1030-MSF-019088-8000GB-V15B-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for Lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for Lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-48-C1030-MSF-019088-8000GB-V15B-REVA_Lower1" />
+        <Rack ID="2" SkuID="EX-32A-RACK-48-C1030-MSF-019088-8000GB-V15B-REVA_Lower2" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-50A-RACK-48-C1030-MSF-019073-8000GB-V15B-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for Lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for Lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-RACK-48-C1030-MSF-019073-8000GB-V15B-REVA_Lower1" />
+        <Rack ID="2" SkuID="EX-50A-RACK-48-C1030-MSF-019073-8000GB-V15B-REVA_Lower2" />
+      </Racks>
+    </RackGroupSku>
+    
+       <RackGroupSku ID="EX-50A-RACK-48-C1030-MSF-019050-8000GB-V15B-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for Lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for Lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-RACK-48-C1030-MSF-019050-8000GB-V15B-REVA_Lower1" />
+        <Rack ID="2" SkuID="EX-50A-RACK-48-C1030-MSF-019050-8000GB-V15B-REVA_Lower2" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-50A-RACK-46-C1030W-MSF-026875-9.9TB-V15D-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-RACK-46-C1030W-MSF-026875-9.9TB-V15D-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-50A-RACK-46-C1030W-MSF-026875-9.9TB-V15D-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-50A-RACK-46-C1030W-MSF-025463-8.0TB-V15D-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-RACK-46-C1030W-MSF-025463-8.0TB-V15D-ONL-REVA_lower" />
+        <Rack ID="2" SkuID="EX-50A-RACK-46-C1030W-MSF-025463-8.0TB-V15D-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-026882-9.9TB-V15E-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-026882-9.9TB-V15E-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-026882-9.9TB-V15E-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-026881-9.9TB-V15E-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-026881-9.9TB-V15E-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-026881-9.9TB-V15E-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-025709-8.0TB-V15E-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-025709-8.0TB-V15E-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-025709-8.0TB-V15E-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-025708-8.0TB-V15E-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-025708-8.0TB-V15E-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-025708-8.0TB-V15E-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-026938-9.9TB-V15E-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-026938-9.9TB-V15E-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-026938-9.9TB-V15E-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-50A-RACK-46-C1030W-MSF-026940-9.9TB-V15E-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-RACK-46-C1030W-MSF-026940-9.9TB-V15E-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-50A-RACK-46-C1030W-MSF-026940-9.9TB-V15E-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-46-C1030W-MSF-028602-9.9TB-V15E-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-46-C1030W-MSF-028602-9.9TB-V15E-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-RACK-46-C1030W-MSF-028602-9.9TB-V15E-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-30A-RACK-96-C1030W-MSF-022462-8.0TB-V15D-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="3" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper1 rack TS-->
+          <Wire LocationA="3" SlotA="TS1_PP1" LocationB="4" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper2 rack TS-->
+          <Wire LocationA="4" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="3" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper1 rack NS-->
+          <Wire LocationA="3" SlotA="NS1_PP2" LocationB="4" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper2 rack NS-->
+          <Wire LocationA="4" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-30A-RACK-96-C1030W-MSF-022462-8.0TB-V15D-REVA_Lower1" />
+        <Rack ID="3" SkuID="EX-30A-RACK-96-C1030W-MSF-022462-8.0TB-V15D-REVA_Upper1" />
+        <Rack ID="2" SkuID="EX-30A-RACK-96-C1030W-MSF-022462-8.0TB-V15D-REVA_Lower2" />
+        <Rack ID="4" SkuID="EX-30A-RACK-96-C1030W-MSF-022462-8.0TB-V15D-REVA_Upper2" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-96-C1030W-MSF-022461-8.0TB-V15D-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="3" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper1 rack TS-->
+          <Wire LocationA="3" SlotA="TS1_PP1" LocationB="4" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper2 rack TS-->
+          <Wire LocationA="4" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="3" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper1 rack NS-->
+          <Wire LocationA="3" SlotA="NS1_PP2" LocationB="4" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper2 rack NS-->
+          <Wire LocationA="4" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-96-C1030W-MSF-022461-8.0TB-V15D-REVA_Lower1" />
+        <Rack ID="3" SkuID="EX-32A-RACK-96-C1030W-MSF-022461-8.0TB-V15D-REVA_Upper1" />
+        <Rack ID="2" SkuID="EX-32A-RACK-96-C1030W-MSF-022461-8.0TB-V15D-REVA_Lower2" />
+        <Rack ID="4" SkuID="EX-32A-RACK-96-C1030W-MSF-022461-8.0TB-V15D-REVA_Upper2" />
+      </Racks>
+    </RackGroupSku>
+    
+    <RackGroupSku ID="EX-32A-RACK-96-C1030-MSF-019834-8000GB-V15B-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="3" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper1 rack TS-->
+          <Wire LocationA="3" SlotA="TS1_PP1" LocationB="4" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper2 rack TS-->
+          <Wire LocationA="4" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="3" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper1 rack NS-->
+          <Wire LocationA="3" SlotA="NS1_PP1" LocationB="3" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="3" SlotA="NS1_PP2" LocationB="4" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper2 rack NS-->
+          <Wire LocationA="4" SlotA="NS1_PP1" LocationB="4" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="4" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-96-C1030-MSF-019834-8000GB-V15B-REVA_Lower1" />
+        <Rack ID="3" SkuID="EX-32A-RACK-96-C1030-MSF-019834-8000GB-V15B-REVA_Upper1" />
+        <Rack ID="2" SkuID="EX-32A-RACK-96-C1030-MSF-019834-8000GB-V15B-REVA_Lower2" />
+        <Rack ID="4" SkuID="EX-32A-RACK-96-C1030-MSF-019834-8000GB-V15B-REVA_Upper2" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-96-C1030-MSF-018971-8000GB-V15B-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="3" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper1 rack TS-->
+          <Wire LocationA="3" SlotA="TS1_PP1" LocationB="4" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper2 rack TS-->
+          <Wire LocationA="4" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="3" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper1 rack NS-->
+          <Wire LocationA="3" SlotA="NS1_PP1" LocationB="3" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="3" SlotA="NS1_PP2" LocationB="4" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper2 rack NS-->
+          <Wire LocationA="4" SlotA="NS1_PP1" LocationB="4" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="4" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-96-C1030-MSF-018971-8000GB-V15B-REVA_Lower1" />
+        <Rack ID="3" SkuID="EX-32A-RACK-96-C1030-MSF-018971-8000GB-V15B-REVA_Upper1" />
+        <Rack ID="2" SkuID="EX-32A-RACK-96-C1030-MSF-018971-8000GB-V15B-REVA_Lower2" />
+        <Rack ID="4" SkuID="EX-32A-RACK-96-C1030-MSF-018971-8000GB-V15B-REVA_Upper2" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-96-C1030-MSF-018977-8000GB-V15B-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="3" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper1 rack TS-->
+          <Wire LocationA="3" SlotA="TS1_PP1" LocationB="4" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper2 rack TS-->
+          <Wire LocationA="4" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="3" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper1 rack NS-->
+          <Wire LocationA="3" SlotA="NS1_PP1" LocationB="3" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="3" SlotA="NS1_PP2" LocationB="4" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper2 rack NS-->
+          <Wire LocationA="4" SlotA="NS1_PP1" LocationB="4" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="4" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-96-C1030-MSF-018977-8000GB-V15B-REVA_Lower1" />
+        <Rack ID="3" SkuID="EX-32A-RACK-96-C1030-MSF-018977-8000GB-V15B-REVA_Upper1" />
+        <Rack ID="2" SkuID="EX-32A-RACK-96-C1030-MSF-018977-8000GB-V15B-REVA_Lower2" />
+        <Rack ID="4" SkuID="EX-32A-RACK-96-C1030-MSF-018977-8000GB-V15B-REVA_Upper2" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-50A-RACK-96-C1030W-MSF-022553-8000GB-V15B-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="3" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper1 rack TS-->
+          <Wire LocationA="3" SlotA="TS1_PP1" LocationB="4" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper2 rack TS-->
+          <Wire LocationA="4" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="3" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper1 rack NS-->
+          <Wire LocationA="3" SlotA="NS1_PP1" LocationB="3" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="3" SlotA="NS1_PP2" LocationB="4" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper2 rack NS-->
+          <Wire LocationA="4" SlotA="NS1_PP1" LocationB="4" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="4" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-RACK-96-C1030W-MSF-022553-8000GB-V15B-REVA_Lower1" />
+        <Rack ID="3" SkuID="EX-50A-RACK-96-C1030W-MSF-022553-8000GB-V15B-REVA_Upper1" />
+        <Rack ID="2" SkuID="EX-50A-RACK-96-C1030W-MSF-022553-8000GB-V15B-REVA_Lower2" />
+        <Rack ID="4" SkuID="EX-50A-RACK-96-C1030W-MSF-022553-8000GB-V15B-REVA_Upper2" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-RACK-96-C1030-MSF-019025-8000GB-V15B-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="3" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper1 rack TS-->
+          <Wire LocationA="3" SlotA="TS1_PP1" LocationB="4" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper2 rack TS-->
+          <Wire LocationA="4" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="3" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper1 rack NS-->
+          <Wire LocationA="3" SlotA="NS1_PP1" LocationB="3" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="3" SlotA="NS1_PP2" LocationB="4" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper2 rack NS-->
+          <Wire LocationA="4" SlotA="NS1_PP1" LocationB="4" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="4" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-96-C1030-MSF-019025-8000GB-V15B-REVA_Lower1" />
+        <Rack ID="3" SkuID="EX-32A-RACK-96-C1030-MSF-019025-8000GB-V15B-REVA_Upper1" />
+        <Rack ID="2" SkuID="EX-32A-RACK-96-C1030-MSF-019025-8000GB-V15B-REVA_Lower2" />
+        <Rack ID="4" SkuID="EX-32A-RACK-96-C1030-MSF-019025-8000GB-V15B-REVA_Upper2" />
+      </Racks>
+    </RackGroupSku>
+    
+    <RackGroupSku ID="EX-32A-RACK-94-C1030-MSF-019009-8000GB-V15B-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="3" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper1 rack TS-->
+          <Wire LocationA="3" SlotA="TS1_PP1" LocationB="4" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper2 rack TS-->
+          <Wire LocationA="4" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="3" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper1 rack NS-->
+          <Wire LocationA="3" SlotA="NS1_PP1" LocationB="3" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="3" SlotA="NS1_PP2" LocationB="4" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper2 rack NS-->
+          <Wire LocationA="4" SlotA="NS1_PP1" LocationB="4" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="4" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-RACK-94-C1030-MSF-019009-8000GB-V15B-REVA_Lower1" />
+        <Rack ID="3" SkuID="EX-32A-RACK-94-C1030-MSF-019009-8000GB-V15B-REVA_Upper1" />
+        <Rack ID="2" SkuID="EX-32A-RACK-94-C1030-MSF-019009-8000GB-V15B-REVA_Lower2" />
+        <Rack ID="4" SkuID="EX-32A-RACK-94-C1030-MSF-019009-8000GB-V15B-REVA_Upper2" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-50A-RACK-96-C1030W-MSF-022841-8.0TB-V15B-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower1 rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="3" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower2 rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper1 rack TS-->
+          <Wire LocationA="3" SlotA="TS1_PP1" LocationB="4" SlotB="TS1_AcSocket_1" />
+          <!--Power for upper2 rack TS-->
+          <Wire LocationA="4" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for lower1 rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for lower2 rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="3" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper1 rack NS-->
+          <Wire LocationA="3" SlotA="NS1_PP1" LocationB="3" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="3" SlotA="NS1_PP2" LocationB="4" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper2 rack NS-->
+          <Wire LocationA="4" SlotA="NS1_PP1" LocationB="4" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="4" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-RACK-96-C1030W-MSF-022841-8.0TB-V15B-REVA_Lower1" />
+        <Rack ID="3" SkuID="EX-50A-RACK-96-C1030W-MSF-022841-8.0TB-V15B-REVA_Upper1" />
+        <Rack ID="2" SkuID="EX-50A-RACK-96-C1030W-MSF-022841-8.0TB-V15B-REVA_Lower2" />
+        <Rack ID="4" SkuID="EX-50A-RACK-96-C1030W-MSF-022841-8.0TB-V15B-REVA_Upper2" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-12-DL360G9-MSF-025878-9.9TB-G4.0-XARCHIVE-REVA">
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-12-DL360G9-MSF-025878-9.9TB-G4.0-XARCHIVE-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-12-DL360G9-MSF-025878-9.9TB-G4.0-XARCHIVE-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-32A-12-DL360G9-MSF-025879-9.9TB-G4.0-XARCHIVE-REVA">
+      <Racks>
+        <Rack ID="1" SkuID="EX-32A-12-DL360G9-MSF-025879-9.9TB-G4.0-XARCHIVE-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-32A-12-DL360G9-MSF-025879-9.9TB-G4.0-XARCHIVE-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-50A-12-DL360G9-MSF-025880-9.9TB-G4.0-XARCHIVE-REVA">
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-12-DL360G9-MSF-025880-9.9TB-G4.0-XARCHIVE-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-50A-12-DL360G9-MSF-025880-9.9TB-G4.0-XARCHIVE-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="EX-50A-12-DL360G9-MSF-025881-9.9TB-G4.0-XARCHIVE-REVA">
+      <Racks>
+        <Rack ID="1" SkuID="EX-50A-12-DL360G9-MSF-025881-9.9TB-G4.0-XARCHIVE-REVA_Lower" />
+        <Rack ID="2" SkuID="EX-50A-12-DL360G9-MSF-025881-9.9TB-G4.0-XARCHIVE-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="RASSY-DPLY-AZURE-GEN4.0-XARCHIVE-TIER2-HPE-48U-Q4FY17-EX-50A-12-DL360G9-MSF-033239-9.9TB-G4.0-XARCHIVE">
+      <Racks>
+        <Rack ID="1" SkuID="RASSY-DPLY-AZURE-GEN4.0-XARCHIVE-TIER2-HPE-48U-Q4FY17-EX-50A-12-DL360G9-MSF-033239-9.9TB-G4.0-XARCHIVE_Lower" />
+        <Rack ID="2" SkuID="RASSY-DPLY-AZURE-GEN4.0-XARCHIVE-TIER2-HPE-48U-Q4FY17-EX-50A-12-DL360G9-MSF-033239-9.9TB-G4.0-XARCHIVE_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="RASSY-DPLY-AZURE-GEN4.0-XARCHIVE-TIER2-HPE-48U-FY18Q4-EX-50A-12-DL360G9-MSF-033260-G4.0-XARCHIVE">
+      <Racks>
+        <Rack ID="1" SkuID="RASSY-DPLY-AZURE-GEN4.0-XARCHIVE-TIER2-HPE-48U-FY18Q4-EX-50A-12-DL360G9-MSF-033260-G4.0-XARCHIVE_Lower" />
+        <Rack ID="2" SkuID="RASSY-DPLY-AZURE-GEN4.0-XARCHIVE-TIER2-HPE-48U-FY18Q4-EX-50A-12-DL360G9-MSF-033260-G4.0-XARCHIVE_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="RASSY-DPLY-AZURE-XARCHIVE-GEN4.0-INTEL-TIER3-HPE-48U-50A-12-FY19Q1.B.1-MSF-034564">
+      <Racks>
+        <Rack ID="1" SkuID="RASSY-DPLY-AZURE-XARCHIVE-GEN4.0-INTEL-TIER3-HPE-48U-50A-12-FY19Q1.B.1-MSF-034564_Lower" />
+        <Rack ID="2" SkuID="RASSY-DPLY-AZURE-XARCHIVE-GEN4.0-INTEL-TIER3-HPE-48U-50A-12-FY19Q1.B.1-MSF-034564_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="RASSY-DPLY-AZURE-XARCHIVE-GEN4.0-INTEL-TIER3-HPE-48U-50A-12-FY19Q1.B.1-MSF-034567">
+      <Racks>
+        <Rack ID="1" SkuID="RASSY-DPLY-AZURE-XARCHIVE-GEN4.0-INTEL-TIER3-HPE-48U-50A-12-FY19Q1.B.1-MSF-034567_Lower" />
+        <Rack ID="2" SkuID="RASSY-DPLY-AZURE-XARCHIVE-GEN4.0-INTEL-TIER3-HPE-48U-50A-12-FY19Q1.B.1-MSF-034567_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="RASSY-DPLY-AZURE-XARCHIVE-GEN4.0-INTEL-TIER3-HPE-48U-30_32A-12-Q1FY18-CHINA-MSF-035555">
+      <Racks>
+        <Rack ID="1" SkuID="RASSY-DPLY-AZURE-XARCHIVE-GEN4.0-INTEL-TIER3-HPE-48U-30_32A-12-Q1FY18-CHINA-MSF-035555_Lower" />
+        <Rack ID="2" SkuID="RASSY-DPLY-AZURE-XARCHIVE-GEN4.0-INTEL-TIER3-HPE-48U-30_32A-12-Q1FY18-CHINA-MSF-035555_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="RASSY-DPLY-AZURE-XARCHIVE-GEN4.0-INTEL-TIER3-HPE-48U-30_32A-12-Q1FY18-CHINA-MSF-035556">
+      <Racks>
+        <Rack ID="1" SkuID="RASSY-DPLY-AZURE-XARCHIVE-GEN4.0-INTEL-TIER3-HPE-48U-30_32A-12-Q1FY18-CHINA-MSF-035556_Lower" />
+        <Rack ID="2" SkuID="RASSY-DPLY-AZURE-XARCHIVE-GEN4.0-INTEL-TIER3-HPE-48U-30_32A-12-Q1FY18-CHINA-MSF-035556_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="777A-ITPAC-D-1760-MSF-029368-G5.0-COMPUTE-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <Wire LocationA="1" SlotA="TS2_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for Upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="2" SlotB="TS2_AcSocket_1" />
+          <Wire LocationA="2" SlotA="TS2_PP1" LocationB="1" SlotB="TS2_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS1_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS1_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="777A-ITPAC-D-1760-MSF-029368-G5.0-COMPUTE-REVA_Lower" />
+        <Rack ID="2" SkuID="777A-ITPAC-D-1760-MSF-029368-G5.0-COMPUTE-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="389A-ITPAC-D-880-MSF-034098-G5.0-COMPUTE-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for Upper rack TS-->
+          <Wire LocationA="2" SlotA="TS2_PP1" LocationB="1" SlotB="TS2_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS2_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS2_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="389A-ITPAC-D-880-MSF-034098-G5.0-COMPUTE-REVA_Lower" />
+        <Rack ID="2" SkuID="389A-ITPAC-D-880-MSF-034098-G5.0-COMPUTE-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="389A-ITPAC-D-880-MSF-030799-G5.0-COMPUTE-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <Wire LocationA="1" SlotA="TS2_PP1" LocationB="1" SlotB="TS1_AcSocket_1" />
+          <!--Power for Upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="2" SlotB="TS2_AcSocket_1" />
+          <Wire LocationA="2" SlotA="TS2_PP1" LocationB="1" SlotB="TS2_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP1" LocationB="1" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS2_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP1" LocationB="2" SlotB="TS1_AcSocket_2" />
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS2_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="389A-ITPAC-D-880-MSF-030799-G5.0-COMPUTE-REVA_Lower" />
+        <Rack ID="2" SkuID="389A-ITPAC-D-880-MSF-030799-G5.0-COMPUTE-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="393A-ITPAC-D-1056-MSF-030704-V15C-ONL-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for Upper rack TS-->
+          <Wire LocationA="2" SlotA="TS2_PP1" LocationB="1" SlotB="TS2_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS2_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS2_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="393A-ITPAC-D-1056-MSF-030704-V15C-ONL-REVA_Lower" />
+        <Rack ID="2" SkuID="393A-ITPAC-D-1056-MSF-030704-V15C-ONL-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="499A-ITPAC-D-1152-MSF-033081-G5.0-WEB-REVA">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for Upper rack TS-->
+          <Wire LocationA="2" SlotA="TS2_PP1" LocationB="1" SlotB="TS2_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS2_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS2_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="499A-ITPAC-D-1152-MSF-033081-G5.0-WEB-REVA_Lower" />
+        <Rack ID="2" SkuID="499A-ITPAC-D-1152-MSF-033081-G5.0-WEB-REVA_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="ITPAC-DPLY-ITPAC-C1040-BING-WEB-GEN5.0-INTEL-ITPAC-DELL-54U-1152-FY20Q1.JUL.01-MSF-037517">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for Upper rack TS-->
+          <Wire LocationA="2" SlotA="TS2_PP1" LocationB="1" SlotB="TS2_AcSocket_1" />
+          <!--Power for lower rack NS-->
+          <Wire LocationA="1" SlotA="NS1_PP2" LocationB="2" SlotB="TS2_AcSocket_3" />
+          <!--Power for upper rack NS-->
+          <Wire LocationA="2" SlotA="NS1_PP2" LocationB="1" SlotB="TS2_AcSocket_3" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="ITPAC-DPLY-ITPAC-C1040-BING-WEB-GEN5.0-INTEL-ITPAC-DELL-54U-1152-FY20Q1.JUL.01-MSF-037517_Lower" />
+        <Rack ID="2" SkuID="ITPAC-DPLY-ITPAC-C1040-BING-WEB-GEN5.0-INTEL-ITPAC-DELL-54U-1152-FY20Q1.JUL.01-MSF-037517_Upper" />
+      </Racks>
+    </RackGroupSku>
+
+    <RackGroupSku ID="ITPAC-DPLY-ITPAC-C1040-BING-WEB-GEN5.8-INTEL-ITPAC-DELL-48U-1152-FY20Q1.JUL.02-MSF-037520">
+      <Wires>
+        <WireGroup Type="power">
+          <!--Power for Lower rack TS-->
+          <Wire LocationA="1" SlotA="TS1_PP1" LocationB="2" SlotB="TS1_AcSocket_1" />
+          <!--Power for Upper rack TS-->
+          <Wire LocationA="2" SlotA="TS1_PP1" LocationB="1" SlotB="TS2_AcSocket_1" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="ITPAC-DPLY-ITPAC-C1040-BING-WEB-GEN5.8-INTEL-ITPAC-DELL-48U-1152-FY20Q1.JUL.02-MSF-037520_Lower" />
+        <Rack ID="2" SkuID="ITPAC-DPLY-ITPAC-C1040-BING-WEB-GEN5.8-INTEL-ITPAC-DELL-48U-1152-FY20Q1.JUL.02-MSF-037520_Upper" />
+      </Racks>
+    </RackGroupSku>
+    <RackGroupSku ID="RASSY-DPLY-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.0-INTEL-102-ZT-42U-STANDARD-13-FY20Q3-MSF-055495">
+      <Racks>
+        <Rack ID="1" SkuID="RASSY-DPLY-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.0-INTEL-102-ZT-42U-STANDARD-13-FY20Q3-MSF-055495_Lower" />
+        <Rack ID="2" SkuID="RASSY-DPLY-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.0-INTEL-102-ZT-42U-STANDARD-13-FY20Q3-MSF-055495_Upper" />
+      </Racks>
+    </RackGroupSku>
+    <RackGroupSku ID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.2-INTEL-102-ZT-42U-STANDARD-13-FY21Q1-MSF-058570">
+      <Racks>
+        <Rack ID="1" SkuID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.2-INTEL-102-ZT-42U-STANDARD-13-FY21Q1-MSF-058570_Lower" />
+        <Rack ID="2" SkuID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.2-INTEL-102-ZT-42U-STANDARD-13-FY21Q1-MSF-058570_Upper" />
+      </Racks>
+    </RackGroupSku>
+    <RackGroupSku ID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.3-INTEL-104-ZT-42U-STANDARD-13-FY22Q1-MSF-060976">
+      <Racks>
+        <Rack ID="1" SkuID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.3-INTEL-104-ZT-42U-STANDARD-13-FY22Q1-MSF-060976_Lower" />
+        <Rack ID="2" SkuID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.3-INTEL-104-ZT-42U-STANDARD-13-FY22Q1-MSF-060976_Upper" />
+      </Racks>
+    </RackGroupSku>
+    <RackGroupSku ID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.2-INTEL-102-ZT-42U-STANDARD-13-FY21Q1-MSF-057015">
+      <Racks>
+        <Rack ID="1" SkuID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.2-INTEL-102-ZT-42U-STANDARD-13-FY21Q1-MSF-057015_Lower" />
+        <Rack ID="2" SkuID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.2-INTEL-102-ZT-42U-STANDARD-13-FY21Q1-MSF-057015_Upper" />
+      </Racks>
+    </RackGroupSku>
+    <RackGroupSku ID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.3-INTEL-104-ZT-42U-STANDARD-13-FY22Q1-DCLABS-MSF-20210830">
+      <Racks>
+        <Rack ID="1" SkuID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.3-INTEL-104-ZT-42U-STANDARD-13-FY22Q1-DCLABS-MSF-20210830_Lower" />
+        <Rack ID="2" SkuID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.3-INTEL-104-ZT-42U-STANDARD-13-FY22Q1-DCLABS-MSF-20210830_Upper" />
+      </Racks>
+    </RackGroupSku>
+    <RackGroupSku ID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.4-INTEL-104-LENOVO-42U-STANDARD-18-FY23Q1-EXPANSION-MSF-064757">
+      <Racks>
+        <Rack ID="1" SkuID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.4-INTEL-104-LENOVO-42U-STANDARD-18-FY23Q1-EXPANSION-MSF-064757_Lower" />
+        <Rack ID="2" SkuID="RASSY-PILOT-AZURESF-CONVERGED-XDIRECTCOMPMED-GEN1.4-INTEL-104-LENOVO-42U-STANDARD-18-FY23Q1-EXPANSION-MSF-064757_Upper" />
+      </Racks>
+    </RackGroupSku>
+    <RackGroupSku ID="ARES-AZURE-COMPUTE-AI-GEN9.1-INTEL-105-DCLABS">
+      <Wires>
+        <WireGroup Type="link">
+          <!-- Cable which runs from Bottom SideKick RackSCM to Top IT-Rack RackSCM -->
+          <Wire LocationA="2" SlotA="TS1_CntlOut" LocationB="1" SlotB="TS2_CntlIn" />
+          <!-- Cable which runs from Bottom IT-Rack RackSCM to Top SideKick RackSCM -->
+          <Wire LocationA="1" SlotA="TS2_CntlOut" LocationB="2" SlotB="TS2_CntlIn" />
+          <!-- Cable which runs from Top SideKick RackSCM to Bottom SideKick RackSCM -->
+          <Wire LocationA="2" SlotA="TS2_CntlOut" LocationB="2" SlotB="TS1_CntlIn" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="ERASSY-AZURE-COMPUTE-AI-GEN9.1-INTEL-105-DCLABS-MSF-08092023" /> <!-- IT Rack -->
+        <Rack ID="2" SkuID="ERASSY-AZURE-COMPUTE-AI-GEN9.1-INTEL-105-DCLABS-MSF-08082023" /> <!-- SideKick Rack -->
+      </Racks>
+    </RackGroupSku>
+    <RackGroupSku ID="Azure_Compute_AI_Intel_Gen9.1">
+      <Wires>
+        <WireGroup Type="link">
+          <!-- Cable which runs from Bottom SideKick RackSCM to Top IT-Rack RackSCM -->
+          <Wire LocationA="2" SlotA="TS1_CntlOut" LocationB="1" SlotB="TS3_CntlIn" />
+          <!-- Cable which runs from Top IT-Rack RackSCM to Bottom IT-Rack RackSCM -->
+          <Wire LocationA="1" SlotA="TS3_CntlOut" LocationB="1" SlotB="TS2_CntlIn" />
+          <!-- Cable which runs from Bottom IT-Rack RackSCM to Top SideKick RackSCM -->
+          <Wire LocationA="1" SlotA="TS2_CntlOut" LocationB="2" SlotB="TS2_CntlIn" />
+          <!-- Cable which runs from Top SideKick RackSCM to Bottom SideKick RackSCM -->
+          <Wire LocationA="2" SlotA="TS2_CntlOut" LocationB="2" SlotB="TS1_CntlIn" />
+        </WireGroup>
+      </Wires>
+      <Racks>
+        <Rack ID="1" SkuID="ERASSY-AZURE-COMPUTE-AI-GEN9.1-INTEL-105-Quanta-M1283430-001-MSF-076794" /> <!-- IT Rack -->
+        <Rack ID="2" SkuID="ERASSY-AZURE-COMPUTE-AI-GEN9.1-INTEL-103-Quanta-M1296039-001-MSF-078616" /> <!-- SideKick Rack -->
+      </Racks>
+    </RackGroupSku>
+  </RackGroupSkus>
+</TopologyDefinition>
